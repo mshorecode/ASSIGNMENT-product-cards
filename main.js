@@ -20,7 +20,7 @@ const products = [
     id: 2,
     productName: "Red Dunk Cards",
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
-    availability: true,
+    availability: false,
     specifications: {
       size: "1x1",
       weight: "8oz.",
@@ -37,7 +37,7 @@ const products = [
     id: 3,
     productName: "Blue Dunk Cards",
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
-    availability: true,
+    availability: false,
     specifications: {
       size: "1x1",
       weight: "8oz.",
@@ -116,13 +116,13 @@ const cardsOnDom = (array) => {
     
     domString += `
     <div class="card" style="width: 18rem;">
-      <header> 
+      <header id="title"> 
         <h2>${product.productName}</h2>
       </header>
       <div class="card-body">
         <img src="${product.imageUrl}" class="card-img-top" alt="${product.productName}">
-        <p class="card-text">${product.productDescription}</p>
-        <p class="card-text">This product is still available!</p>
+        <p class="description">${product.productDescription}</p>
+        <p id="available">${product.availability ? `Available` : `Out-of-Stock`}</p>
       </div>
 
       <div class="specifications">
