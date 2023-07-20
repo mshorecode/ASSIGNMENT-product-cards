@@ -40,3 +40,24 @@
   font-size: large;
   font-weight: bold;  
 }
+
+.sections {
+  padding: 6px; 
+}
+
+.specs, .prices {
+  padding: 0 0 0 24px;
+  margin: 0 0 8px 0;
+  font-weight: 600; 
+}
+
+.valid {
+  padding: 0 0 0 8px;
+  margin: 6px 0 0 0;
+  font-style: italic;
+}
+
+h5 {
+  padding: 0 0 0 8px;
+  font-size: x-large;
+}

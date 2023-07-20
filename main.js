@@ -5,8 +5,8 @@ const products = [
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     availability: true,
     specifications: {
-      size: "1x1",
-      weight: "8oz.",
+      size: `4" x 4"`,
+      weight: "8 oz.",
       valid: "1/1/24"
     },
     pricing: {
@@ -22,8 +22,8 @@ const products = [
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     availability: false,
     specifications: {
-      size: "1x1",
-      weight: "8oz.",
+      size: `4" x 4"`,
+      weight: "8 oz.",
       valid: "1/1/24"
     },
     pricing: {
@@ -39,8 +39,8 @@ const products = [
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     availability: false,
     specifications: {
-      size: "1x1",
-      weight: "8oz.",
+      size: `4" x 4"`,
+      weight: "8 oz.",
       valid: "1/1/24"
     },
     pricing: {
@@ -56,8 +56,8 @@ const products = [
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     availability: true,
     specifications: {
-      size: "1x1",
-      weight: "8oz.",
+      size: `4" x 4"`,
+      weight: "8 oz.",
       valid: "1/1/24"
     },
     pricing: {
@@ -73,8 +73,8 @@ const products = [
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     availability: true,
     specifications: {
-      size: "1x1",
-      weight: "8oz.",
+      size: `4" x 4"`,
+      weight: "8 oz.",
       valid: "1/1/24"
     },
     pricing: {
@@ -90,8 +90,8 @@ const products = [
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     availability: true,
     specifications: {
-      size: "1x1",
-      weight: "8oz.",
+      size: `4" x 4"`,
+      weight: "8 oz.",
       valid: "1/1/24"
     },
     pricing: {
@@ -125,25 +125,25 @@ const cardsOnDom = (array) => {
         <p id="available">${product.availability ? `Available` : `Out-of-Stock`}</p>
       </div>
 
-      <div class="specifications">
+      <section class="sections">
         <header>
           <h5>Specifications</h5>
         </header>
-        <p>Size: ${product['specifications'].size}</p>
-        <p>Size: ${product['specifications'].weight}</p>
+        <p class="specs">Size: ${product['specifications'].size}</p>
+        <p class="specs">Size: ${product['specifications'].weight}</p>
         <footer>
-          <p>Specifications are valid until ${product['specifications'].valid}</p>
+          <p class="valid">Specifications are valid until <b>${product['specifications'].valid}</b></p>
         </footer>
-      </div>
+      </section>
 
-      <div class="pricing">
+      <section class="sections">
         <header>
           <h5>Pricing</h5>
         </header>
-        <p>1: ${product['pricing'].one}</p>
-        <p>2-50: ${product['pricing'].two}</p>
-        <p>51+: ${product['pricing'].three}</p>
-      </div>
+        <p class="prices">1: ${product['pricing'].one}</p>
+        <p class="prices">2-50: ${product['pricing'].two}</p>
+        <p class="prices">51+: ${product['pricing'].three}</p>
+      </section>
     </div>
     `;
   }
