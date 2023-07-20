@@ -127,13 +127,22 @@ const cardsOnDom = (array) => {
 
       <div class="specifications">
         <header>
-          <h4>Specifications</h4>
+          <h5>Specifications</h5>
         </header>
         <p>Size: ${product['specifications'].size}</p>
         <p>Size: ${product['specifications'].weight}</p>
         <footer>
           <p>Specifications are valid until ${product['specifications'].valid}</p>
         </footer>
+      </div>
+
+      <div class="pricing">
+        <header>
+          <h5>Pricing</h5>
+        </header>
+        <p>1: ${product['pricing'].one}</p>
+        <p>2-50: ${product['pricing'].two}</p>
+        <p>51+: ${product['pricing'].three}</p>
       </div>
     </div>
     `;
