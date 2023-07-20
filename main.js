@@ -1,7 +1,7 @@
 const products = [
   {
     id: 1,
-    productName: "Yellow Dunk Cards",
+    productName: "Solid Label",
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     availability: true,
     specifications: {
@@ -14,11 +14,12 @@ const products = [
       two: `$1.49`,
       three: `$0.99`,
     },
-    imageUrl: "./images/yellow-card.png",
+    imageUrl: "./images/cassette.jpeg",
+    soldOut: "./images/soldOut.png",
   },
   {
     id: 2,
-    productName: "Red Dunk Cards",
+    productName: "Clearly Labeled",
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     availability: false,
     specifications: {
@@ -31,11 +32,12 @@ const products = [
       two: `$1.49`,
       three: `$0.99`,
     },
-    imageUrl: "./images/red-card.png",
+    imageUrl: "./images/cassette_2.jpg",
+    soldOut: "./images/soldOut.png",
   },
   {
     id: 3,
-    productName: "Blue Dunk Cards",
+    productName: "Clearly Clear",
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     availability: false,
     specifications: {
@@ -48,11 +50,12 @@ const products = [
       two: `$1.49`,
       three: `$0.99`,
     },
-    imageUrl: "./images/blue-card.png",
+    imageUrl: "./images/cassette_3.jpg",
+    soldOut: "./images/soldOut.png",
   },
   {
     id: 4,
-    productName: "Pink Dunk Cards",
+    productName: "Grab Bag",
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     availability: true,
     specifications: {
@@ -65,11 +68,12 @@ const products = [
       two: `$1.49`,
       three: `$0.99`,
     },
-    imageUrl: "./images/pink-card.png",
+    imageUrl: "./images/assortment.jpg",
+    soldOut: "./images/soldOut.png",
   },
   {
     id: 5,
-    productName: "Dunk Cards",
+    productName: "The Bundle",
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     availability: true,
     specifications: {
@@ -82,13 +86,14 @@ const products = [
       two: `$1.49`,
       three: `$0.99`,
     },
-    imageUrl: "./images/yellow-card.png",
+    imageUrl: "./images/bundle.jpg",
+    soldOut: "./images/soldOut.png",
   },
   {
     id: 6,
-    productName: "Dunk Cards",
+    productName: "Get Your Cases Here!",
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
-    availability: true,
+    availability: false,
     specifications: {
       size: `4" x 4"`,
       weight: "8 oz.",
@@ -97,10 +102,11 @@ const products = [
     pricing: {
       one: `$1.99`,
       two: `$1.49`,
-      three: `$0.99`,
+      three: `$0.99`
     },
-    imageUrl: "./images/red-card.png",
-  },
+    imageUrl: "./images/cases.jpg",
+    soldOut: "./images/soldOut.png",
+  }
 ];
 
 const renderToDom = (divId, html) => {
