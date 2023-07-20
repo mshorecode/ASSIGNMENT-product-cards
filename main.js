@@ -116,10 +116,24 @@ const cardsOnDom = (array) => {
     
     domString += `
     <div class="card" style="width: 18rem;">
+      <header> 
+        <h2>${product.productName}</h2>
+      </header>
       <div class="card-body">
         <img src="${product.imageUrl}" class="card-img-top" alt="${product.productName}">
         <p class="card-text">${product.productDescription}</p>
         <p class="card-text">This product is still available!</p>
+      </div>
+
+      <div class="specifications">
+        <header>
+          <h4>Specifications</h4>
+        </header>
+        <p>Size: ${product['specifications'].size}</p>
+        <p>Size: ${product['specifications'].weight}</p>
+        <footer>
+          <p>Specifications are valid until ${product['specifications'].valid}</p>
+        </footer>
       </div>
     </div>
     `;
