@@ -3,7 +3,7 @@ const products = [
     id: 1,
     productName: "the Solid Label",
     productDescription: "Unleash the power of music with this timeless medium, perfect for audiophiles seeking warm, rich tones and an authentic listening experience. ",
-    availability: true,
+    availability: false,
     specifications: {
       size: `4" × 2½" × ½"`,
       weight: "1.43 oz",
