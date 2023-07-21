@@ -3,7 +3,7 @@ const products = [
     id: 1,
     productName: "the Solid Label",
     productDescription: "Unleash the power of music with this timeless medium, perfect for audiophiles seeking warm, rich tones and an authentic listening experience. ",
-    availability: true,
+    availability: false,
     specifications: {
       size: `4" × 2½" × ½"`,
       weight: "1.43 oz",
@@ -21,7 +21,7 @@ const products = [
     id: 2,
     productName: "Clearly Labeled",
     productDescription: "Ideal for artists, collectors, and enthusiasts alike, this cassette tape promises to be your faithful companion on every sonic journey.",
-    availability: false,
+    availability: true,
     specifications: {
       size: `4" × 2½" × ½"`,
       weight: "1.43 oz",
@@ -39,7 +39,7 @@ const products = [
     id: 3,
     productName: "Clearly Clear",
     productDescription: "Its smooth surface reflects the passion and craftsmanship poured into its creation, showcasing a dedication to preserving the essence of a bygone era.",
-    availability: false,
+    availability: true,
     specifications: {
       size: `4" × 2½" × ½"`,
       weight: "1.43 oz",
@@ -93,7 +93,7 @@ const products = [
     id: 6,
     productName: "Get Your Cases Here!",
     productDescription: "Crafted with precision and care, our cassette cases feature a sturdy construction that shields your tapes from dust, scratches, and other potential damage.",
-    availability: false,
+    availability: true,
     specifications: {
       size: `4" × 2½" × ½"`,
       weight: "2.3 oz",
@@ -126,9 +126,13 @@ const cardsOnDom = (array) => {
         <h2>${product.productName}</h2>
       </header>
       <div class="card-body">
-        <img src="${product.imageUrl}" class="card-img-top" alt="${product.productName}">
+        <img src="${product.imageUrl}" class="card-img-top img" alt="${product.productName}">
+        ${!product.availability ? `<div class="container">
+          <img src="${product.soldOut}" class="sold-out">
+        </div>` : ``}
         <p class="description">${product.productDescription}</p>
-        <p id="available">${product.availability ? `Available` : `Out-of-Stock`}</p>
+        <p id="available">${product.availability ? `Available` : `Out-of-Stock`}
+        </p>
       </div>
 
       <section class="specifications">
