@@ -75,7 +75,7 @@ const products = [
     id: 5,
     productName: "The Bundle",
     productDescription: "We've combined the vintage allure of analog music with the practicality of modern protection. Rediscover the magic of cassettes while safeguarding your audio treasures in style.",
-    availability: true,
+    availability: false,
     specifications: {
       size: `4" × 2½" × ½"`,
       weight: "2.8 oz",
@@ -88,6 +88,7 @@ const products = [
     },
     imageUrl: "./images/bundle.jpg",
     soldOut: "./images/soldOut.png",
+    
   },
   {
     id: 6,
@@ -128,11 +129,10 @@ const cardsOnDom = (array) => {
       <div class="card-body">
         <img src="${product.imageUrl}" class="card-img-top img" alt="${product.productName}">
         ${!product.availability ? `<div class="container">
-          <img src="${product.soldOut}" class="sold-out">
+          <img src="${product.soldOut}">
         </div>` : ``}
         <p class="description">${product.productDescription}</p>
-        <p id="available">${product.availability ? `Available` : `Out-of-Stock`}
-        </p>
+        <p id="available">${product.availability ? `Available` : `Out-of-Stock`}</p>
       </div>
 
       <section class="specifications">

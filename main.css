@@ -86,11 +86,6 @@ h5 {
   font-size: x-large;
 }
 
-.sold-out {
-  position: absolute;
-  z-index: 1;
-}
-
 .container {
   position: absolute;
   z-index: 0;
