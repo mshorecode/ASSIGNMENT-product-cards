@@ -2,7 +2,7 @@ const products = [
   {
     id: 1,
     productName: "Solid Label",
-    productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
+    productDescription: "Unleash the power of music with this timeless medium, perfect for audiophiles seeking warm, rich tones and an authentic listening experience. ",
     availability: true,
     specifications: {
       size: `4" x 4"`,
@@ -20,7 +20,7 @@ const products = [
   {
     id: 2,
     productName: "Clearly Labeled",
-    productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
+    productDescription: "Ideal for artists, collectors, and enthusiasts alike, this cassette tape promises to be your faithful companion on every sonic journey.",
     availability: false,
     specifications: {
       size: `4" x 4"`,
@@ -38,7 +38,7 @@ const products = [
   {
     id: 3,
     productName: "Clearly Clear",
-    productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
+    productDescription: "Its smooth surface reflects the passion and craftsmanship poured into its creation, showcasing a dedication to preserving the essence of a bygone era.",
     availability: false,
     specifications: {
       size: `4" x 4"`,
@@ -55,7 +55,7 @@ const products = [
   },
   {
     id: 4,
-    productName: "Grab Bag",
+    productName: "The Grab Bag",
     productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
     availability: true,
     specifications: {
