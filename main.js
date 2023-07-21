@@ -1,12 +1,12 @@
 const products = [
   {
     id: 1,
-    productName: "Solid Label",
+    productName: "the Solid Label",
     productDescription: "Unleash the power of music with this timeless medium, perfect for audiophiles seeking warm, rich tones and an authentic listening experience. ",
     availability: true,
     specifications: {
-      size: `4" x 4"`,
-      weight: "8 oz.",
+      size: `4" × 2½" × ½"`,
+      weight: "1.43 oz",
       valid: "1/1/24"
     },
     pricing: {
@@ -23,8 +23,8 @@ const products = [
     productDescription: "Ideal for artists, collectors, and enthusiasts alike, this cassette tape promises to be your faithful companion on every sonic journey.",
     availability: false,
     specifications: {
-      size: `4" x 4"`,
-      weight: "8 oz.",
+      size: `4" × 2½" × ½"`,
+      weight: "1.43 oz",
       valid: "1/1/24"
     },
     pricing: {
@@ -41,8 +41,8 @@ const products = [
     productDescription: "Its smooth surface reflects the passion and craftsmanship poured into its creation, showcasing a dedication to preserving the essence of a bygone era.",
     availability: false,
     specifications: {
-      size: `4" x 4"`,
-      weight: "8 oz.",
+      size: `4" × 2½" × ½"`,
+      weight: "1.43 oz",
       valid: "1/1/24"
     },
     pricing: {
@@ -56,11 +56,11 @@ const products = [
   {
     id: 4,
     productName: "The Grab Bag",
-    productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
+    productDescription: "Immerse yourself in nostalgia as you unveil an assortment hidden gems from yesteryears. Each grab bag is thoughtfully curated, offering a delightful surprise!",
     availability: true,
     specifications: {
-      size: `4" x 4"`,
-      weight: "8 oz.",
+      size: `4" × 2½" × ½"`,
+      weight: "1.43 oz",
       valid: "1/1/24"
     },
     pricing: {
@@ -74,11 +74,11 @@ const products = [
   {
     id: 5,
     productName: "The Bundle",
-    productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
+    productDescription: "We've combined the vintage allure of analog music with the practicality of modern protection. Rediscover the magic of cassettes while safeguarding your audio treasures in style.",
     availability: true,
     specifications: {
-      size: `4" x 4"`,
-      weight: "8 oz.",
+      size: `4" × 2½" × ½"`,
+      weight: "2.8 oz",
       valid: "1/1/24"
     },
     pricing: {
@@ -92,11 +92,11 @@ const products = [
   {
     id: 6,
     productName: "Get Your Cases Here!",
-    productDescription: "Take your basketball skills to new heights with Dunk Cards, the innovative and interactive training tool that brings excitement and progress to every practice session.",
+    productDescription: "Crafted with precision and care, our cassette cases feature a sturdy construction that shields your tapes from dust, scratches, and other potential damage.",
     availability: false,
     specifications: {
-      size: `4" x 4"`,
-      weight: "8 oz.",
+      size: `4" × 2½" × ½"`,
+      weight: "2.3 oz",
       valid: "1/1/24"
     },
     pricing: {
@@ -131,18 +131,18 @@ const cardsOnDom = (array) => {
         <p id="available">${product.availability ? `Available` : `Out-of-Stock`}</p>
       </div>
 
-      <section class="sections">
+      <section class="specifications">
         <header>
           <h5>Specifications</h5>
         </header>
         <p class="specs">Size: ${product['specifications'].size}</p>
-        <p class="specs">Size: ${product['specifications'].weight}</p>
+        <p class="specs">Weight: ${product['specifications'].weight}</p>
         <footer>
           <p class="valid">Specifications are valid until <b>${product['specifications'].valid}</b></p>
         </footer>
       </section>
 
-      <section class="sections">
+      <section class="pricing">
         <header>
           <h5>Pricing</h5>
         </header>

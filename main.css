@@ -49,11 +49,14 @@ h2 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: normal;
+  background-color: #022E5F;
+  color: white;
+  text-shadow: 2px 2px 2px black;
 }
 
 #available {
   padding: 4px 0 4px 16px;
-  margin: 8px 0;
+  margin: 0;
   background-color: darkgrey;
   color: yellow;
   text-shadow: 2px 2px 4px black;
@@ -61,19 +64,31 @@ h2 {
   font-weight: bold;  
 }
 
-.sections {
-  padding: 6px; 
+.specifications {
+  padding: 16px 12px 12px 12px;
+  background-color: #022E5F;
+  color: white;
+}
+
+.pricing {
+  padding: 16px 12px 12px 12px;
+  background-color: #022E5F;
+  color: white;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .specs, .prices {
   padding: 0 0 0 24px;
   margin: 0 0 8px 0;
-  font-weight: 600; 
+  font-weight: 600;
+  background-color: #022E5F;
+  color: white; 
 }
 
 .valid {
   padding: 0 0 0 8px;
-  margin: 6px 0 0 0;
+  margin: 16px 0 0 0;
   font-style: italic;
 }
 
