@@ -1,3 +1,100 @@
-body {
-  background-color: white;
+@font-face {
+  font-family: "The Midnight";
+  src: url("./fonts/TheMidnightSlant.otf");
+}
+
+#app {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.card {
+  margin: 1rem;
+  flex-basis: 31%;
+  border-radius: 1rem;
+  border: 1px solid lightblue;
+}
+
+.card-body {
+  padding: 0;
+}
+
+#title {
+  text-align: center;
+  margin: 0;
+  padding: 32px; 
+  border-bottom: 1px solid lightblue;
+  background-image: url('./images/80s-scifi.png');
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+h2 {
+  font-family: 'The Midnight', cursive;
+  font-size: 1.5rem;
+  color: #F02036;
+  text-shadow: 1px 1px 2px #01210E; 
+}
+
+.card-img-top {
+  border-radius: 0%;
+}
+
+.description {
+  text-align: left;
+  padding: 32px 48px;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+#available {
+  padding: 4px 0 4px 16px;
+  margin: 0;
+  background-color: darkgrey;
+  color: yellow;
+  text-shadow: 2px 2px 4px black;
+  font-size: large;
+  font-weight: bold;  
+}
+
+.specifications {
+  padding: 16px 12px 12px 12px;
+}
+
+.pricing {
+  padding: 16px 12px 12px 12px;
+}
+
+.specs, .prices {
+  padding: 0 0 0 24px;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.valid {
+  padding: 0 0 0 8px;
+  margin: 16px 0 0 0;
+  font-style: italic;
+}
+
+h5 {
+  padding: 0 0 0 8px;
+  font-size: x-large;
+}
+
+.sold-out {
+  position: absolute;
+  z-index: 1;
+}
+
+.container {
+  position: absolute;
+  z-index: 0;
+  width: 448.42px;
+  height: 298.94px;
+  top: 110px;
 }
